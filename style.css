@@ -1,0 +1,259 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+.login__Page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login__Page img {
+  width: 30%;
+  margin-top: 5%;
+}
+
+.login__Page form {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+}
+
+.login__Page form input,
+.login__Page form select {
+  padding: 1rem 2rem;
+  background-color: white;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  border: 1px solid #dbdbdb;
+}
+
+.login__Page form input::placeholder {
+  font-size: 1.5rem;
+}
+
+.login__Page form button {
+  padding: 1rem 2rem;
+  background-color: #abd7d1;
+  margin-top: 1rem;
+  border-radius: 10px;
+  width: 55%;
+  display: block;
+  margin: 0 auto;
+  margin-top: 10px;
+  border-radius: 25px;
+  border: none;
+  color: #8f8f8f;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/* CAMPO */
+
+.campo__Page {
+  min-height: calc(100vh - 5rem);
+  display: flex;
+  padding-top: 5rem;
+}
+
+.campo__Page-firstColumn {
+  display: flex;
+  flex-direction: column;
+  width: 30vw;
+  margin-left: 10vw;
+  margin-top: 5rem;
+  position: fixed;
+  top: 0;
+  min-height: calc(100vh - 5rem);
+}
+
+.filter__form {
+  display: flex;
+  align-items: center;
+}
+
+.filter__form input {
+  background-color: white;
+  width: 60%;
+  line-height: 2rem;
+  border: 1px solid black;
+  border-radius: 20px;
+  padding-left: 1rem;
+}
+
+.filter__button {
+  background-image: url(./assets/filterbutton.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: none;
+  padding: 2rem;
+}
+
+.filter__title {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1, 5rem;
+}
+
+.filter__filter {
+  display: flex;
+  height: 10vh;
+  margin-top: 2rem;
+  width: 100%;
+  align-items: center;
+  border-bottom: 1px solid #8f8f8f;
+}
+
+.filter__filter p {
+  font-size: 1.5rem;
+  padding-left: 3rem;
+  color: #8f8f8f;
+}
+
+.filter__filter img {
+  background-image: url(./assets/filter.png);
+  width: 80px;
+  height: 80px;
+  margin-bottom: 1rem;
+  border: none;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.campo__Page-secondColumn {
+  width: 50vw;
+  margin-left: 40vw;
+  color: #8f8f8f;
+}
+
+.result__card {
+  display: flex;
+  width: 90%;
+  margin-left: 10%;
+  margin-bottom: 3rem;
+  background-color: #ececec;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.result__card-firstCol {
+  border-right: 1px solid #8f8f8f;
+  width: 50%;
+  padding: 10px;
+}
+
+.result__card h4 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.id__div {
+  display: flex;
+  align-items: center;
+}
+
+.id__div p {
+  margin-left: 3rem;
+  margin-top: 2rem;
+}
+
+.result__card-secondCol {
+  padding-left: 2rem;
+  width: 50%;
+}
+
+.result__card-secondCol button {
+  padding: 0.8rem 2rem;
+  width: 60%;
+  border-radius: 25px;
+  background-color: #abd7d1;
+  border: none;
+  display: block;
+  margin: 10px auto;
+  color: white;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 1200px) {
+  .login__Page {
+    margin-top: 8rem;
+  }
+
+  .login__Page form {
+    width: 85%;
+  }
+  .campo__Page {
+    flex-direction: column;
+  }
+  .campo__Page-firstColumn {
+    position: initial;
+    width: 80vw;
+    margin-bottom: 2rem;
+    margin-top: 0;
+    min-height: auto;
+  }
+
+  .filter__options div {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .filter__filter {
+    width: 50%;
+  }
+
+  .campo__Page-secondColumn {
+    width: 100vw;
+    margin-left: 0;
+  }
+
+  .result__card {
+    width: 80%;
+    margin-left: 10%;
+  }
+}
+
+@media (max-width: 600px) {
+  .filter__filter {
+    margin-right: 10px;
+    border-bottom: none;
+    width: 45%;
+  }
+  .filter__filter p {
+    font-size: 1rem;
+    padding-left: 0rem;
+  }
+
+  .filter__filter img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 0.5rem;
+  }
+
+  .campo__Page-secondColumn {
+    width: 84vw;
+    margin-left: 8vw;
+  }
+
+  .result__card {
+    flex-direction: column;
+    margin-left: 0;
+  }
+
+  .result__card-firstCol {
+    border-right: none;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .result__card-secondCol {
+    padding-left: 0rem;
+    padding: 10px;
+    width: 100%;
+  }
+}
